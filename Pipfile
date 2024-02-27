@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+joblib = "*"
+scikit-learn = "*"
+tetun-tokenizer = "*"
+requests = "*"
+tldextract = "*"
+googlesearch-python = "*"
+beautifulsoup4 = "*"
+hydra-core = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

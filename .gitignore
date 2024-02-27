@@ -1,0 +1,12 @@
+nutch/
+solr/
+outputs/
+pipeline/data
+pipeline/lid
+Pipfile.lock
+.DS_Store
+__pycache__/
+.vscode
+pipeline/log/
+pipeline/src/__pycache__/
+pipeline/common_utils/__pycache__/
