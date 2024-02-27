@@ -3,7 +3,7 @@ from typing import List
 
 # !/pipeline/common_utils/
 #
-# tetun_lid.py
+# config.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
 # 20-07-2023
 
