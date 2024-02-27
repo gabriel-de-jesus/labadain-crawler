@@ -3,7 +3,7 @@
 
 ## Overview
 
-Labadain crawler is a data collection pipeline designed to optimize the process of constructing comprehensive textual corpora from the web. The system is built on top of the Apache Nutch framework and incorporates language-specific components such as a tokenizer and a language identification model.
+Labadain crawler is a data collection pipeline for low-resource languages designed to optimize the process of constructing comprehensive textual corpora from the web. The system is built on top of the Apache Nutch framework and incorporates language-specific components such as a tokenizer and a language identification model.
 
 
 ## Requirements
