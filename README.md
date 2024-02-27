@@ -107,11 +107,11 @@ Running this command will execute the pipeline and automatically start the crawl
 If you use this repository or any of its contents for your research, academic work, or publication, we kindly request that you cite it as follows:
 
 ````
-@inproceedings{jesus-nunes-2024,
+@misc{jesus-nunes-2024,
   author       = {Gabriel de Jesus and Sérgio Nunes},
   title        = {Data Collection Pipeline for Low-Resource Languages: A Case Study on Constructing a Tetun Text Corpus},
-  howpublished = {Accepted at LREC-COOLING, 2024},
   year         = {2024},
+  note         = {Accepted at LREC-COOLING, 2024},
 }
 ````
 
@@ -122,4 +122,4 @@ If you use this repository or any of its contents for your research, academic wo
 
 
 ## Contact Information
-If you have any questions or feedback, please feel free to contact gabriel.jesus[at]inesctec.pt.
+If you have any questions or feedback, please feel free to contact mestregabrieldejesus[at]gmail.com.
