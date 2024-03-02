@@ -3,7 +3,7 @@ from pathlib import Path
 from typing import List
 from common_utils.utils import Utils
 
-#!/usr/bin/env python
+# !/pipeline/src/
 #
 # get_sample_corpus.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)

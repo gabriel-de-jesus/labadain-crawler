@@ -8,7 +8,7 @@ import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
-#!/usr/bin/env python
+# !/pipeline/
 #
 # seeder.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)

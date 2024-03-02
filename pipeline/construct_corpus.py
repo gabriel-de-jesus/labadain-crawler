@@ -7,11 +7,11 @@ import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
-#!/usr/bin/env python
+# !/pipeline/
 #
 # construct_corpus.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
-# 05-07-2023
+# 10-07-2023
 
 
 class ConstructCorpus:

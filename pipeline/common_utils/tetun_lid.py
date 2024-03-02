@@ -3,7 +3,7 @@ import joblib
 from typing import List
 from pathlib import Path
 
-#!/usr/bin/env python
+# !/pipeline/common_utils/
 #
 # tetun_lid.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
