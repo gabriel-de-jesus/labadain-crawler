@@ -7,11 +7,11 @@ import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
-# !/pipeline/
+# !/usr/bin/env pipenv
 #
 # generate_eval_sample.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
-# 17-07-2023
+# 02-03-2024
 
 
 class GenerateEvalSample:
