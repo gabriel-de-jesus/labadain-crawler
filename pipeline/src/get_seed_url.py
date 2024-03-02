@@ -4,7 +4,7 @@ from typing import List
 from googlesearch import search
 from common_utils.utils import Utils, extract_domain
 
-# !/pipeline/src/
+#!/usr/bin/env python
 #
 # get_seed_url.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)

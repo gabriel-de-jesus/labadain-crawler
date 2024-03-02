@@ -6,7 +6,7 @@ from typing import List, Dict
 from common_utils.tetun_lid import TetunLid
 from common_utils.utils import Utils
 
-# !/pipeline/src/
+#!/usr/bin/env python
 #
 # get_seed_word.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
