@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List
 
-# !/pipeline/common_utils/
+# !/usr/bin/env pipenv
 #
 # config.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
