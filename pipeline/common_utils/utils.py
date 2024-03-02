@@ -4,7 +4,7 @@ import re
 import html
 from typing import List
 
-# !/pipeline/common_utils/
+#!/usr/bin/env python
 #
 # utils.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
