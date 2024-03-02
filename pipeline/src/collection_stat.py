@@ -11,7 +11,7 @@ from common_utils.utils import Utils, extract_domain
 
 warnings.filterwarnings("ignore")
 
-# !/pipeline/src/
+# !/usr/bin/env pipenv
 #
 # collection_stat.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
