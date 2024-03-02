@@ -7,7 +7,7 @@ import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
-# !/pipeline/
+#!/usr/bin/env python
 #
 # view_collection_stat.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)

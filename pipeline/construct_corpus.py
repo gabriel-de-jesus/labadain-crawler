@@ -7,7 +7,7 @@ import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
-# !/pipeline/
+#!/usr/bin/env python
 #
 # construct_corpus.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
