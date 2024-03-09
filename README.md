@@ -25,7 +25,7 @@ Labadain crawler is a data collection pipeline for low-resource languages design
 - [ ] Install `git` and clone the source code of the pipeline:
 
 ```
-$ git clone https://gitlab.inesctec.pt/humanise/_imis/tetun-ir/tetun-crawler-pipeline.git
+$ git clone https://github.com/gabriel-de-jesus/labadain-crawler.git
 
 ```
 
