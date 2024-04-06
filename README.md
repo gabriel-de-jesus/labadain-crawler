@@ -54,7 +54,7 @@ To set up Apache Nutch and Solr, follow these steps:
 To set up the pipeline, you need to organize the following main folders in the specified structure:
 
 - [ ] **bin**: this folder contains a bash file that allows configuration of seeder iterations and crawling rounds.
-- [ ] **pipeline**: this folder contains include the codes for configuration, seeder, corpus construction, and corpus summary generation. It also contains the lid, data, and log folders.
+- [ ] **pipeline**: this folder contents include codes for configuration, seeder, corpus construction, and corpus summary generation. It also contains the lid, data, and log folders.
 - [ ] **nutch**: it contains the Nucth framework files.
 - [ ] **solr**: it contains the Solr framework files.
 
