@@ -40,18 +40,18 @@ pipenv install --dev
 
 To set up Apache Nutch and Solr, follow these steps:
 
-- [ ] **Download Apache Nutch and Solr:** download the Apache Nutch and Solr packages and save them to the **crawler-home** directory. Ensure that you download the appropriate version compatible with your system.
+- [ ] **Download Apache Nutch and Solr:** download the Apache Nutch and Solr packages and save them into the **crawler-home** directory. Ensure that you download the appropriate version compatible with your system.
 
-- [ ] **Configure Apache Nutch:** refer to the [Nutch installation and configuration tutorial](https://cwiki.apache.org/confluence/display/NUTCH/NutchTutorial) for detailed instructions on configuring Nutch. Follow the tutorial, but skip the **Crawl your first website** section and proceed directly to the **Setup Solr for search** section.
+- [ ] **Configure Apache Nutch:** refer to the [Nutch installation and configuration tutorial](https://cwiki.apache.org/confluence/display/NUTCH/NutchTutorial) for detailed instructions on how to configuring Nutch. Follow the tutorial, but skip the **Crawl your first website** section and proceed directly to the **Setup Solr for search** section.
 
-- [ ] **Rename the Nutch and Solr packages:** after downloading the packages, rename the Nutch package directory from `apache-nutch-1.x` to `nutch` and the Solr package directory from `apache-solr-9.x` to `solr`.
+- [ ] **Rename the Nutch and Solr packages:** after downloading and extracting the packages, rename the Nutch package directory from `apache-nutch-1.x` to `nutch` and the Solr package directory from `apache-solr-9.x` to `solr`.
 
-- [ ] **Verify the Nutch and Solr configuration:** after completing the configuration steps, verify that both Nutch and Solr are working correctly. You can do this by following the verification steps provided in the tutorial.
+- [ ] **Verify the Nutch and Solr configurations:** after completing the configuration steps, verify that both Nutch and Solr are working correctly. You can do this by following the verification steps provided in the tutorial.
 
 
 ## Pipeline Setup
 
-To set up the pipeline, you will need to organize the following main folders in the specified structure:
+To set up the pipeline, you need to organize the following main folders in the specified structure:
 
 - [ ] **bin**: this folder contains a bash file that allows configuration of seeder iterations and crawling rounds.
 - [ ] **pipeline**: this folder contains include the codes for configuration, seeder, corpus construction, and corpus summary generation. It also contains the lid, data, and log folders.
@@ -85,16 +85,16 @@ In the configuration folder, you will find the general pipeline configuration lo
 To configure the language identification (LID) model in the pipeline, follow these steps:
 
 - [ ] Open the file **pipeline/common_utils/tetun_lid.py**.
-- [ ] Locate the `get_tetun_text`function within the file.
+- [ ] Locate the `get_tetun_text` function within the file.
 - [ ] Adjust the function according to the nature of your LID model.
-- [ ] **Ensure that the function receives a list of strings as input.** This is important for optimizing the corpus construction process and making it faster. Make the necessary modifications to the `get_tetun_text` function based on your LID model's requirements.
+- [ ] **Ensure that the function receives a list of strings as input.** This is important to optimize the corpus construction process and make it faster. Undertake the necessary modifications to the `get_tetun_text` function based on your LID model's requirements.
 
 
 ## Pipeline Execution
 
 To execute the pipeline and initiate the crawling process, follow these steps:
 
-- [ ] On the `crawler-home` directory, run the bash file named `crawler.sh`using the following command:
+- [ ] On the `crawler-home` directory, run the bash file named `crawler.sh` using the following command:
 
 ```
 $ bash ./bin/crawler.sh
