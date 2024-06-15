@@ -107,16 +107,28 @@ Running this command will execute the pipeline and automatically start the crawl
 If you use this repository or any of its contents for your research, academic work, or publication, we kindly request that you cite it as follows:
 
 ````
-@misc{jesus-nunes-2024,
-  author       = {Gabriel de Jesus and Sérgio Nunes},
-  title        = {Data Collection Pipeline for Low-Resource Languages: A Case Study on Constructing a Tetun Text Corpus},
-  year         = {2024},
-  note         = {Accepted at LREC-COOLING, 2024},
+@inproceedings{de-jesus-nunes-2024-labadain-crawler,
+    title = "Data Collection Pipeline for Low-Resource Languages: A Case Study on Constructing a Tetun Text Corpus",
+    author = "de Jesus, Gabriel  and
+      Nunes, S{\'e}rgio Sobral",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.390",
+    pages = "4368--4380"
 }
 ````
 
 ## Acknowledgement
-This work is financed by National Funds through the Portuguese funding agency, FCT - Fundação para a Ciência e a Tecnologia under the PhD scholarship grant number SFRH/BD/151437/2021.
+This work is financed by National Funds through the Portuguese funding agency, FCT - Fundação para a Ciência e a Tecnologia under the PhD scholarship grant number SFRH/BD/151437/2021 (DOI 10.54499/SFRH/BD/151437/2021).
 
 
 ## License
