@@ -16,13 +16,13 @@ cd nutch
 ./bin/crawl -i -s urls/ --hostdbupdate --hostdbgenerate crawl/ 15
 cd ..
 # # Crawling process is concluded
-echo "The crawling have been successfully concluded."
+echo "The crawling process has been successfully concluded."
 
 # Construct the text corpus
 echo "Constructing text corpus ..."
 python3 ./pipeline/construct_corpus.py
 # Corpus construction process is concluded
-echo "The corpus have been successfully generated."
+echo "The corpus has been successfully generated."
 
 # Generate collection statistic
 echo "Generating statistic for the collection ..."
