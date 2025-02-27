@@ -38,6 +38,6 @@ params:
   - facebook.com
   - linkedin.com
   # Sample configuration
-  total_samples: 6
+  total_samples: 7
   total_text_pages: 50
 
