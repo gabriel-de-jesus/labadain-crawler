@@ -139,7 +139,7 @@ If you use this repository or any of its contents for your research, academic wo
 ````
 
 ## Acknowledgement
-This work is financed by National Funds through the Portuguese funding agency, FCT - Fundação para a Ciência e a Tecnologia under the PhD studentship grant number SFRH/BD/151437/2021 (DOI 10.54499/SFRH/BD/151437/2021).
+This work is financed by National Funds through the Portuguese funding agency, FCT - Fundação para a Ciência e a Tecnologia under the PhD scholarship grant number SFRH/BD/151437/2021 (DOI 10.54499/SFRH/BD/151437/2021).
 
 
 ## License
