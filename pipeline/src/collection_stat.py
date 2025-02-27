@@ -42,7 +42,7 @@ class CollectionStatistic:
         )
 
     def generate_stats(self) -> None:
-        """ Load the final corpus and get the URLs, extract domains and extensions as well as inlinks and outlinks. """
+        """Load the final corpus and get the URLs, extract domains and extensions as well as inlinks and outlinks."""
 
         logging.info("Generating statistics for the collection...")
         corpus = self.final_corpus_file_path.load_final_corpus()
@@ -111,7 +111,7 @@ class CollectionStatistic:
                 continue
 
         # Save the inlinks and outlinks summary
-        stat_inlinks_outlinks = f""" Statistics of the collection:
+        stat_inlinks_outlinks = f"""Statistics of the collection:
         ========================================
         Total web pages (urls) processed: {total_documents}\n
         Max outlinks: {max(outlink_count_list)}, Min outlinks: {min(outlink_count_list)}, Average oulinks: {np.mean(outlink_count_list):.2f}

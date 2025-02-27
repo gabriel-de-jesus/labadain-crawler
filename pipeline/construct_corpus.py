@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 
 
 class ConstructCorpus:
-    """ This class generates text pages for the Tetun corpus and save them in a file. """
+    """This class generates text pages for the Tetun corpus and save them in a file."""
 
     def __init__(self, cfg) -> None:
         self.get_corpus = GetCorpus(

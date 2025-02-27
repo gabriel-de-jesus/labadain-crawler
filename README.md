@@ -21,18 +21,18 @@ Labadain crawler is a data collection pipeline for low-resource languages design
 ## Getting started
 
 - [ ] Create a project folder and name it `crawler-home`.
-- [ ] Navigate into the project folder and install `pip`, create a virtual environment (here we use `pipenv`), and activate it.
-- [ ] Install `git` and clone the source code of the pipeline:
+- [ ] Navigate into the project folder, create a virtual environment and activate it.
+- [ ] Clone the pipeline's source codes:
 
 ```
 $ git clone https://github.com/gabriel-de-jesus/labadain-crawler.git
 
 ```
 
-- [ ]  Install the dependencies specified in the Pipfile.
+- [ ]  Install the dependencies specified in the `requirements` file.
 
 ```
-pipenv install --dev
+pip install -r requirements.txt
 ```
 
 
@@ -53,7 +53,6 @@ To set up Apache Nutch and Solr, follow these steps:
 
 To set up the pipeline, you need to organize the following main folders in the specified structure:
 
-- [ ] **bin**: this folder contains a bash file that allows configuration of seeder iterations and crawling rounds.
 - [ ] **pipeline**: this folder contents include codes for configuration, seeder, corpus construction, and corpus summary generation. It also contains the lid, data, and log folders.
 - [ ] **nutch**: it contains the Nucth framework files.
 - [ ] **solr**: it contains the Solr framework files.
@@ -94,17 +93,29 @@ To configure the language identification (LID) model in the pipeline, follow the
 
 To execute the pipeline and initiate the crawling process, follow these steps:
 
-- [ ] On the `crawler-home` directory, run the bash file named `crawler.sh` using the following command:
+- [ ] On the `crawler-home` directory, run the file named `labadain_crawler.py` using the following command :
 
 ```
-$ bash ./bin/crawler.sh
+python3 labadain_crawler.py
 ```
 
-Running this command will execute the pipeline and automatically start the crawling process. Please ensure that you are in the correct directory before executing the command, as the path `./bin/crawler.sh` should be relative to the current working directory.
+**Note:** The default values are 5 for `seeder repetitions` and 1 for `crawling repetitions`. You can adjust these parameters, for example, by setting `seeder repetitions to 10` and `crawling repetitions to 5` as follows:
+
+```
+python3 labadain_crawler.py --seeder-runs 10 --crawl-runs 5
+```
+
+To skip some stages such as `seeder` and `crawling`, you can use `skip` parameter:
+
+```
+python3 labadain_crawler.py --skip-seeder --skip-crawl
+```
+
+Running this command will execute the pipeline and automatically start the crawling process.
 
 
 ## Citation
-If you use this repository or any of its contents for your research, academic work, or publication, we kindly request that you cite it as follows:
+If you use this repository or any of its contents for your research, academic work, or publication, please cite it as follows:
 
 ````
 @inproceedings{de-jesus-nunes-2024-labadain-crawler,
@@ -128,7 +139,7 @@ If you use this repository or any of its contents for your research, academic wo
 ````
 
 ## Acknowledgement
-This work is financed by National Funds through the Portuguese funding agency, FCT - Fundação para a Ciência e a Tecnologia under the PhD scholarship grant number SFRH/BD/151437/2021 (DOI 10.54499/SFRH/BD/151437/2021).
+This work is financed by National Funds through the Portuguese funding agency, FCT - Fundação para a Ciência e a Tecnologia under the PhD studentship grant number SFRH/BD/151437/2021 (DOI 10.54499/SFRH/BD/151437/2021).
 
 
 ## License

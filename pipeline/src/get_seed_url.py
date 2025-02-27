@@ -114,7 +114,7 @@ class GetSeedUrl:
         return list(domains)
 
     def generate_seed_urls(self) -> None:
-        """ Gets seed urls returned by the Google search and their respective domains. """
+        """Gets seed urls returned by the Google search and their respective domains."""
 
         seed_urls = self.get_seed_urls()
         domains = self.get_domains(seed_urls)

@@ -1,3 +1,4 @@
+import time
 import random
 from pathlib import Path
 from collections import Counter
@@ -14,7 +15,7 @@ from common_utils.utils import Utils
 
 
 class GetSeedWords:
-    """ 
+    """
     This class:
     (1) Gets a random text sample as per the predefined ratio.
     (2) Tokenizes the text sample into tokens (words).
@@ -41,24 +42,31 @@ class GetSeedWords:
         self.seed_words_file = Utils(seed_words_file_path)
         self.tetun_lang = tetun_lang
         self.tetun_lid = TetunLid(
-            self.tetun_lang, self.lang_proba_threshold, lid_model_file_path)
+            self.tetun_lang, self.lang_proba_threshold, lid_model_file_path
+        )
 
     def get_sample_corpus(self) -> List[str]:
         """
-        Generates a random text sample from the corpus 
+        Generates a random text sample from the corpus
         as per the predefined ratio and return it in a list of strings.
         """
 
         corpus = self.main_corpus.load_corpus()
 
         corpus_size = len(corpus)
+        if len(corpus) == 0:
+            print(
+                f"\n\nThe initial corpus at [./pipeline/data/initial_corpus.txt] has no content. Please provide an initial corpus before continuing!"
+            )
+            time.sleep(300)  # Pause for 5 minutes
+
         sample_size = int(self.corpus_sample_ratio * corpus_size)
         sample_corpus = random.sample(corpus, sample_size)
 
         return sample_corpus
 
     def tokenize_sample_corpus(self) -> List[str]:
-        """ Tokenizes the sample corpus into tokens and return them in a list of strings. """
+        """Tokenizes the sample corpus into tokens and return them in a list of strings."""
 
         doc = self.get_sample_corpus()
         print(f"\nTotal corpus sample: {len(doc)} documents.")
@@ -71,7 +79,7 @@ class GetSeedWords:
 
     def calculate_proba_distribution(self) -> Dict:
         """
-        Counts word frequency, calculate its probability of distribution and 
+        Counts word frequency, calculate its probability of distribution and
         return a dictionary contains words and their distribution probability.
         """
 
@@ -80,14 +88,13 @@ class GetSeedWords:
 
         freq_dict = Counter(words)
         total_words = len(words)
-        probs_dist = {word: count / total_words for word,
-                      count in freq_dict.items()}
+        probs_dist = {word: count / total_words for word, count in freq_dict.items()}
 
         return probs_dist
 
     def generate_seed_words(self) -> str:
         """
-        Samples three unique words and save them into the seed file 
+        Samples three unique words and save them into the seed file
         and return a string of sampled words.
         """
 

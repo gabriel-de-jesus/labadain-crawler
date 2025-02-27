@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 
 
 class MainSeeder:
-    """ This class generates seed words and seed URLs, including domains from the seed URLs. """
+    """This class generates seed words and seed URLs, including domains from the seed URLs."""
 
     def __init__(self, cfg) -> None:
         self.get_seed_word = GetSeedWords(

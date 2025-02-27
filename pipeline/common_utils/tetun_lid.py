@@ -24,10 +24,10 @@ class TetunLid:
         self.lid_model_file_path = lid_model_file_path
 
     def load_lid_model(self) -> object:
-        """ Loads  and return the language identification (LID) model. """
+        """Loads  and return the language identification (LID) model."""
 
         if not os.path.exists(self.lid_model_file_path):
-            print(f"Model file not found at: {self.lid_model_file_path}")
+            print(f"The LID model file not found at: {self.lid_model_file_path}")
             return []
         model = joblib.load(Path(self.lid_model_file_path))
 

@@ -46,7 +46,7 @@ class GetCorpus:
         )
 
     def get_total_documents(self) -> int:
-        """ Gets total of documents from Solr and return it. """
+        """Gets total of documents from Solr and return it."""
 
         params = {"q": "*:*", "rows": self.solr_rows}
         response = requests.get(self.solr_api_url, params=params)

@@ -8,7 +8,7 @@ from typing import List
 # 20-07-2023
 
 
-""" This module contains soft configuration of the pipeline. """
+"""This module contains soft configuration of the pipeline."""
 
 
 @dataclass

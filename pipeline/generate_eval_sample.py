@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 
 
 class GenerateEvalSample:
-    """ Class for generating sample data. """
+    """Class for generating sample data."""
 
     def __init__(self, cfg) -> None:
         self.generate_eval_sample = GetSampleCorpus(

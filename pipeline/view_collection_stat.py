@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 
 
 class ViewCollectionStatistic:
-    """ This class shows the corpus summarization. """
+    """This class shows the corpus summarization."""
 
     def __init__(self, cfg) -> None:
         self.collection_stat = CollectionStatistic(

@@ -3,7 +3,7 @@ solr/
 outputs/
 pipeline/data
 pipeline/lid
-Pipfile.lock
+.labadain-crawler
 .DS_Store
 __pycache__/
 .vscode

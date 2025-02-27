@@ -12,13 +12,13 @@ from typing import List
 
 
 class Utils:
-    """ This class contains functions to load and write a text corpus from/to a file. """
+    """This class contains functions to load and write a text corpus from/to a file."""
 
     def __init__(self, file_path: str) -> None:
         self.file_path = file_path
 
     def load_corpus(self) -> List[str]:
-        """ Loads corpus from a file and returns its contents in a list. """
+        """Loads corpus from a file and returns its contents in a list."""
 
         try:
             with open(self.file_path, "r", encoding="utf-8") as load_file:
@@ -35,7 +35,7 @@ class Utils:
         return contents
 
     def load_final_corpus(self):
-        """ Load and read the final corpus. """
+        """Load and read the final corpus."""
         try:
             with open(self.file_path, "r", encoding="utf-8") as load_file:
                 contents = load_file.read()
@@ -47,7 +47,7 @@ class Utils:
         return contents
 
     def load_sample_corpus(self) -> List[str]:
-        """ Load and read the final corpus for sample text pages. """
+        """Load and read the final corpus for sample text pages."""
         try:
             with open(self.file_path, "r", encoding='utf-8') as load_sample_corpus:
                 contents = load_sample_corpus.read().split('\n\n')
@@ -80,7 +80,7 @@ def get_file_path(path: str, file: str) -> str:
         return file_path
     else:
         raise FileNotFoundError(
-            f"The file or folder '{file_path}' does not exist.")
+            f"The file or folder does not exist.")
 
 
 def extract_domain(seed_url: str) -> str:
@@ -100,7 +100,7 @@ def extract_domain(seed_url: str) -> str:
 
 
 def remove_html_tags(text: str) -> str:
-    """ Remove HTML tags found on the given text. """
+    """Remove HTML tags found on the given text."""
     clean = re.compile('<.*?>')
     text = re.sub(clean, '', text)
     clean_text = html.unescape(text)
