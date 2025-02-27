@@ -1,6 +1,7 @@
 nutch/
 solr/
 outputs/
+Pipfile
 pipeline/data
 pipeline/lid
 .labadain-crawler
