@@ -8,7 +8,7 @@ from common_utils.utils import Utils, extract_domain
 #
 # get_seed_url.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
-# 05-07-2023
+# Updated on 27-02-2025
 
 
 class GetSeedUrl:

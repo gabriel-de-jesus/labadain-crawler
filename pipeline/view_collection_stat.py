@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 #
 # view_collection_stat.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
-# 15-07-2023
+# Updated on 27-02-2025
 
 
 class ViewCollectionStatistic:

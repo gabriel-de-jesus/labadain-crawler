@@ -7,7 +7,7 @@ from common_utils.utils import Utils
 #
 # get_sample_corpus.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
-# 17-07-2023
+# Updated on 27-02-2025
 
 
 class GetSampleCorpus:

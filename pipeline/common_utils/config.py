@@ -5,7 +5,7 @@ from typing import List
 #
 # config.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
-# 20-07-2023
+# Updated on 27-02-2025
 
 
 """This module contains soft configuration of the pipeline."""

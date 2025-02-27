@@ -11,3 +11,4 @@ __pycache__/
 pipeline/log/
 pipeline/src/__pycache__/
 pipeline/common_utils/__pycache__/
+bin/

@@ -8,7 +8,7 @@ from typing import List
 #
 # utils.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
-# 20-06-2023
+# Updated on 27-02-2025
 
 
 class Utils:

@@ -6,7 +6,7 @@ import argparse
 #
 # labadan_crawler.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
-# 27-02-2025
+# Created on 27-02-2025
 
 
 def create_essential_files():

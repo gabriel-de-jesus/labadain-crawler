@@ -9,7 +9,7 @@ from common_utils.utils import Utils, remove_html_tags
 #
 # get_corpus.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
-# 10-05-2023
+# Updated on 27-02-2025
 
 
 class GetCorpus:

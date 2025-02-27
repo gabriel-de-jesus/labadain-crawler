@@ -7,7 +7,7 @@ from pathlib import Path
 #
 # tetun_lid.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
-# 20-06-2023
+# Updated on 27-02-2025
 
 
 class TetunLid:
