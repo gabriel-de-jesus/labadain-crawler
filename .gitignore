@@ -11,4 +11,7 @@ __pycache__/
 pipeline/log/
 pipeline/src/__pycache__/
 pipeline/common_utils/__pycache__/
+<<<<<<< HEAD
 bin/
+=======
+>>>>>>> 50866e1dd95964c823cb2ae210ade8da262223a8
