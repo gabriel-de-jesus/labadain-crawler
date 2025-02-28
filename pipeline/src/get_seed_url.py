@@ -107,9 +107,10 @@ class GetSeedUrl:
         domains = set()
         for seed_url in seed_urls:
             domain = extract_domain(seed_url)
-            if self.is_new_domain(seed_url):
-                domains.add(domain)
-                self.domain_file.save_corpus(domain)
+            if domain:
+                if self.is_new_domain(seed_url):
+                    domains.add(domain)
+                    self.domain_file.save_corpus(domain)
 
         return list(domains)
 

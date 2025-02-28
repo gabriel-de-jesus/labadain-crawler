@@ -1,4 +1,3 @@
-import os
 import subprocess
 import argparse
 
@@ -7,21 +6,6 @@ import argparse
 # labadan_crawler.py
 # Gabriel de Jesus (mestregabrieldejesus@gmail.com)
 # Created on 27-02-2025
-
-
-def create_essential_files():
-    """Ensure the pipeline's required files exist."""
-    base_path = "pipeline/data"
-    file_names = ["domains.txt", "final_corpus.txt", "initial_corpus.txt",
-                  "seed_words.txt", "stat_inlinks_outlinks.txt", "url_inlinks_outlinks.txt"]
-    essential_files = [os.path.join(base_path, filename) for filename in file_names]
-
-    # Ensure base directory exists““
-    os.makedirs(base_path, exist_ok=True)
-    for file in essential_files:
-        if not os.path.exists(file):
-            # Create an empty file
-            open(file, 'w').close()
 
 
 def run_seeder(iterations: int):
@@ -65,7 +49,6 @@ def main():
     parser.add_argument("--skip-stats", action="store_true", help="Skip collection statistics generation")
 
     args = parser.parse_args()
-    print(args)
 
     print("Initiating the crawling process ...")
     if not args.skip_seeder:
@@ -82,5 +65,4 @@ def main():
 
 
 if __name__ == "__main__":
-    create_essential_files()
     main()

@@ -29,6 +29,7 @@ class Files:
     final_corpus: str
     stats_in_out_links: str
     url_in_out_links: str
+    file_names: List[str]
 
 
 @dataclass

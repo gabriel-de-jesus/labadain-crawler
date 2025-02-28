@@ -1,7 +1,7 @@
 import os
-import tldextract
 import re
 import html
+import tldextract
 from typing import List
 
 #!/usr/bin/env python
