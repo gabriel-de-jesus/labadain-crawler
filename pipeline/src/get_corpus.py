@@ -88,8 +88,8 @@ class GetCorpus:
                 valid_title = self.tetun_lid.get_tetun_text(
                     [get_title])  # Apply the Tetun LID model
 
-                if valid_title not in list_of_titles:  # Avoid title duplication
-                    list_of_titles.append([get_title])
+                if valid_title and get_title not in list_of_titles:  # Avoid title duplication
+                    list_of_titles.append(get_title)
 
                     logging.info("Generating page content...")
                     get_url = doc.get("url")
